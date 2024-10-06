@@ -410,7 +410,7 @@ const onDateSelect = (date) => {
 
 onMounted(async () => {
   try {
-    const NEO_data = await fetchCadApi('2020-10-10', '2030-10-10', 0.05);
+    const NEO_data = await fetchCadApi('2022-01-31', '2026-12-31', 0.05);
     processData(NEO_data.data);
     generateTimeline();
     scrollToCentralDate(currentDate.value);
